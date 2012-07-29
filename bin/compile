@@ -37,7 +37,7 @@ if [ -d "$CACHE_DIR/.vertx" ]; then
   echo "done"
 fi
 
-VERTX_URL="http://vertx.io/downloads/vert.x-1.2.1.final.tar.gz"
+VERTX_URL="http://vertx.io/downloads/vert.x-1.2.2.final.tar.gz"
 
 if [ ! -d "$BUILD_DIR/.vertx" ]; then
   echo -n "-----> Installing Vert.x build (to .vertx)....."
