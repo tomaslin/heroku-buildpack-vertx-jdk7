@@ -41,7 +41,7 @@ VERTX_URL="http://vert-x.github.io/vertx-downloads/downloads/vert.x-1.3.1.final.
 
 if [ ! -d "$BUILD_DIR/.vertx" ]; then
   echo -n "-----> Installing Vert.x build (to .vertx)....."
-  curl --max-time 320 --location $VERTX_URL | tar -xf
+  curl --max-time 320 --location $VERTX_URL | tar x
   mv vert* .vertx
   rm '.vertx/bin/vertx.bat'
   cd $BUILD_DIR
